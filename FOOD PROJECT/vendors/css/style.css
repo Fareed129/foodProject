@@ -114,6 +114,7 @@ header{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  margin: 0 3rem;
 }
 
 .feature h3 {
@@ -123,10 +124,43 @@ header{
 }
 
 .feature p {
-  font-size: 14px;
+  font-size: 1.5rem;
+  font-weight: 300;
   color: #555;
 }
 .big-icon{
-    font-size: 3rem;
+    font-size: 5rem;
     color: orange;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    height: 300px;
+    overflow: hidden; 
+    background-color: black;
+}
+.meal-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.15);
+    opacity: 0.7;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+.section-meals{
+    padding: 0;
 }
