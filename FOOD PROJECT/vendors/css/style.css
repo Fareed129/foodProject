@@ -11,14 +11,13 @@ header{
         url('https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .header-content{
     margin-left: 2rem;
     color: white;
     font-size: 1.5rem;
+    position: absolute;
+    top: 40%;
 }
 .header-content h1{
     font-weight: 300;
@@ -48,4 +47,86 @@ header{
 .btn-info:hover{
     color: white;
     background-color: orange;
+}
+.logo{
+    height: 100px;
+    float: left;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+.main-nav{
+    list-style: none;
+    float: right;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-right: 40px;
+}
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 10px;
+    transition: all 0.4s ease;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid orange;
+}
+.features {
+  /* max-width: 100%; */
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.features h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.features h2:after{
+    display: block;
+    height: 2px;
+    background-color: orange;
+    content: " ";
+    width: 100px;
+    margin: 20px auto;
+}
+
+.features .intro {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto 40px;
+  font-size: 2rem;
+  color: #666;
+  font-weight: 300;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #555;
+}
+.big-icon{
+    font-size: 3rem;
+    color: orange;
 }
